@@ -23,10 +23,11 @@ h1, h2 {
 }
 
 .header {
-    min-height: 100vh;
+    height: 100vh;
     background-image: url('img/bg-first-screen.png');
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 150px;
 }
 
 .nav {
@@ -59,7 +60,7 @@ h1, h2 {
 .logo-text {
     color: var(--color-white);
     font-size: 24px;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 29px;
     font-weight: 600px;
     font-family: Titillium Web;
@@ -109,7 +110,7 @@ h1, h2 {
     color: var(--color-white);
     font-size: 48px;
     font-weight: 400;
-    letter-spacing: 1%;
+    letter-spacing: 0.01em;
     text-align: left;
     margin-bottom: 40px;
 }
@@ -127,7 +128,7 @@ h1, h2 {
     font-size: 16px;
     font-family: Open Sans;
     font-weight: 600;
-    letter-spacing: 5%;
+    letter-spacing: 0.05em;
     text-align: center;
     color: var(--color-white);
     padding: 15px 40px;
@@ -141,4 +142,65 @@ h1, h2 {
     background-color: rgba(255, 255, 255, 0.171);
 }
 
+.main-slider {
+    display: flex;
+    justify-content: space-between;
+}
 
+.main-slider-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-slider-header__title {
+    display: flex;
+    align-items: center;
+}
+
+.title-dec {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 40px;
+}
+
+.main-slider__btns {
+    display: flex;
+}
+
+.title-dec1 {
+    background-color: var(--color-accent);
+    height: 3px;
+    width: 100px;
+    margin-bottom: 13px;
+    
+}
+
+.title-dec2 {
+    background-color: var(--color-accent);
+    height: 3px;
+    width: 50px;
+}
+
+.title__text {
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    font-family: Oswald;
+    font-weight: 400;
+}
+
+.btn-slider {
+    cursor: pointer;
+    padding: 20px 24px;
+    background-color: transparent;
+    border: 2px solid var(--color-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns__prev {
+    border-right: none;
+}
