@@ -191,6 +191,7 @@ h1, h2 {
     letter-spacing: 0.05em;
     font-family: Oswald;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .btn-slider {
@@ -357,4 +358,114 @@ h1, h2 {
     font-family: Oswald;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.main-rent {
+    margin-bottom: 108px;
+}
+
+.main-rent-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-rent-body__text-block {
+    max-width: 350px;
+}
+
+.text-block__inf {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: Open Sans;
+    line-height: 24.5px;
+    color: var(--color-black);
+}
+
+.main-rent-body__rent-item {
+    padding: 30px;
+    border: 3px solid var(--color-accent);
+}
+
+.rent-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header__title {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Oswald;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.rent-item-header__btns {
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+}
+
+.rent-item-body {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rent-item-body__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 281px;
+}
+
+.rent-item-body__img {
+    max-height: 250px;
+    max-width: 250px;
+    margin-right: 30px;
+}
+
+.info__title {
+   font-size: 16px;
+   font-weight: 400;
+   font-family: Oswald;
+   letter-spacing: 0.05em;
+   text-transform: uppercase; 
+   max-width: 170px;
+   margin-bottom: 6px;
+}
+
+.info-list {
+    list-style-position: inside;   
+}
+
+.info-list__item {
+    list-style-type: none;
+    padding-left: 20px;
+    position: relative;
+    font-size: 14px;
+    color: var(--color-black);
+    font-weight: 300;
+    font-family: Open Sans;
+    line-height: 19px;
+}
+
+.info-list__item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.info-list__item::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    left: 0;
+    top: 8.5px;
+    background-color: var(--color-black);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
