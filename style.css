@@ -234,6 +234,20 @@ h1, h2 {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.main-slider-body__card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .main-slider-body__card:nth-child(2) {background-image: url('img/bg-card2.png');}
@@ -336,6 +350,20 @@ h1, h2 {
 
 .catalog-cards__card {
     position: relative;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    cursor: pointer;
+}
+
+.catalog-cards__card:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .catalog-cards__card .card-descr {
@@ -497,6 +525,23 @@ h1, h2 {
 .main-news-body {
     display: flex;
     justify-content: space-between;
+}
+
+.news-item {
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    cursor: pointer;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .main-news-body__main-item {
