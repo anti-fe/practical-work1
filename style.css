@@ -155,7 +155,7 @@ h1, h2 {
     margin-bottom: 70px;
 }
 
-.main-slider-header__title {
+.title {
     display: flex;
     align-items: center;
 }
@@ -261,3 +261,100 @@ h1, h2 {
     font-weight: 300;
 }
 
+.section-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.main-catalog {
+    margin-bottom: 165px;
+}
+
+.main-catalog-categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 55px;
+}
+
+.categories-item__link:not(:last-child) {
+    margin-right: 47px;
+}
+
+.categories-item__link {
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    color: var(--color-black);
+    font-family: Oswald;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+.categories-item__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--color-accent);
+    height: 2px;
+    width: 0;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+}
+
+.categories-item__link:hover {
+    color: var(--color-accent);
+}
+
+.categories-item__link:hover::after {
+    width: 100%;
+}
+
+.main-catalog-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__img, .catalog-cards__card {
+    max-width: 350px;
+    max-height: 300px;
+}
+
+.catalog-cards__card {
+    position: relative;
+}
+
+.catalog-cards__card .card-descr {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    display: flex;
+    padding-right: 21px;
+    align-items: center;
+    background-color: var(--color-accent);
+    padding: 20px 25px;
+    min-height: 86px;
+    min-width: 265px;
+}
+
+.catalog-cards__card .card-descr .card-descr__text {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
